@@ -10,7 +10,7 @@ const options = yargs
     .options({
         'm': {
             alias: 'members',
-            describe: 'vu -m <key> Returns the collection of strings for the given key. ',
+            describe: 'vu -m <key> Returns the collection of strings for the given key.',
             requiresArg: true,
             type: 'string'
         },
@@ -236,5 +236,5 @@ switch(userInput) {
         purgeKeyValuePair(options)
         break;
     default:
-        console.log('Error: option does not exist', userInput) 
+        console.log('Error: option does not exist') 
 };
